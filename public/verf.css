@@ -14,18 +14,23 @@ html, body {
     top: 10vh;
     margin: auto;
     border-radius: 15px;
-    padding: 20px;
+    padding: 5px;
   }
-
+.verifi{
+  width: 250px;
+}
   .button {
-    padding: 10px 20px;
+    padding: 15px 25px;
     background-color: #4CAF50;
     color: white;
     border: none;
     border-radius: 4px;
-    font-size: 16px;
+    display: flexbox;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
     cursor: pointer;
-    font-size: 3em;
+    font-size: 1em;
     transition: 0.5s;
     text-decoration: none;
   }
@@ -33,6 +38,6 @@ html, body {
     background-color: #1ff026;
   }
   .text {
-    margin-top: 60px;
+    margin-top: 30px;
     font-size: 1.5em;
   }
