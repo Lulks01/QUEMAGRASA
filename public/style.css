@@ -31,20 +31,17 @@
     display: block;
     background-color: #2a6eff;
     color: #fff;
-    padding: 5px;
+    padding: 0px;
     border-radius: 5px;
     position: relative;
     z-index: -1;
-    bottom: 10px;
+    bottom: 350px;
     align-items: center;
     justify-content: center;
     text-align: center;
 
   }
-  
-  .viewer-icon i {
-    margin-right: 5px;
-  }
+
   
   .viewer-count {
     font-weight: bold;
