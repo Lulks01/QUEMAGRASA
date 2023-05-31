@@ -1,5 +1,4 @@
 html, body {
-    height: 100%;
     margin: 0;
     display: flex;
     align-items: center;
@@ -39,5 +38,5 @@ html, body {
   }
   .text {
     margin-top: 30px;
-    font-size: 1.5em;
+    font-size: 1em;
   }
