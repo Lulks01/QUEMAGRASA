@@ -3,6 +3,8 @@
 <html lang="es">
 
 <head>
+	<link rel="preload" href="https://www.youtube.com/embed/Cw1UCFh4lXA" as="document">
+	<link rel="prefetch" href="https://www.youtube.com/embed/Cw1UCFh4lXA" as="document">
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>QUEMA GRAZA</title>
 	<link rel="stylesheet" href="style.css">
@@ -614,28 +616,123 @@
 
 
 				<div class="elementor-element elementor-element-c42fbb6 e-con-boxed e-flex e-con" data-id="c42fbb6"
-					data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
+				data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
+				<span class="viewer-icon">
+					<i class="fas fa-eye"></i>
+					<span class="viewer-count"><p id="viewer-counter">1230</p></span>
+					<script>
+						setInterval(updateDiv, 900);	
+						text = document.querySelector('#viewer-counter');
+						function updateDiv() {
+								var randomValue = Math.floor(Math.random() * (1500 - 1450)  + 1450);
+								text.textContent = randomValue;
+							}
+					</script>
+				</span>
 					<div class="e-con-inner">
-						<div class='VIDEOPLAYERMEU'>
+						<!-- <div class='VIDEOPLAYERMEU'>
 							<iframe  id='VIDEOMEU' src="https://www.youtube.com/embed/Cw1UCFh4lXA?modestbranding=1&autoplay=1&rel=0&controls=0" title="YouTube video player" frameborder="0" allow=" autoplay;" autoplay async preload allowfullscreen></iframe>
-							<span class="viewer-icon">
-								<i class="fas fa-eye"></i>
-								<span class="viewer-count"><p id="viewer-counter">1230</p></span>
-								<script>
-									setInterval(updateDiv, 900);	
-									text = document.querySelector('#viewer-counter');
-									function updateDiv() {
-											var randomValue = Math.floor(Math.random() * (1500 - 1450)  + 1450);
-											text.textContent = randomValue;
-										}
-								</script>
-							</span>
-						</div>
+						</div> -->
+						<div class="youtube-player" data-id="Cw1UCFh4lXA"></div>
+						<script async>
+							/*
+							 * Light YouTube Embeds by @labnol
+							 * Credit: https://www.labnol.org/
+							 */
+						  
+							function labnolIframe(div) {
+							  var iframe = document.createElement('iframe');
+							  iframe.setAttribute('src', 'https://www.youtube.com/embed/' + div.dataset.id + '?autoplay=1' + '&controls=0');
+							  iframe.setAttribute('frameborder', '0');
+							  iframe.setAttribute('allowfullscreen', '1');
+							  iframe.setAttribute('allow', 'autoplay; muted; ');
+							  div.parentNode.replaceChild(iframe, div);
+							}
+						  
+							function initYouTubeVideos() {
+							  var playerElements = document.querySelectorAll('.youtube-player');
+							  for (var n = 0; n < playerElements.length; n++) {
+								var videoId = playerElements[n].dataset.id;
+								var div = document.createElement('div');
+								div.setAttribute('data-id', videoId);
+								var thumbNode = document.createElement('img');
+								thumbNode.src = './PLACEHOLDER.GIF'.replace('ID', videoId);
+								div.appendChild(thumbNode);
+								var playButton = document.createElement('div');
+								playButton.setAttribute('class', 'play');
+								div.appendChild(playButton);
+								div.onclick = function () {
+								  labnolIframe(this);
+								};
+								playerElements[n].appendChild(div);
+							  }
+							}
+						  
+							document.addEventListener('DOMContentLoaded', initYouTubeVideos);
+						  </script>
+						  <style>
+							.youtube-player {
+							  position: relative;
+							  padding-bottom: 56.25%;
+							  height: 0;
+							  overflow: hidden;
+							  max-width: 100%;
+							  background: #000;
+							  margin: 5px;
+							}
+						  
+							.youtube-player iframe {
+							  position: absolute;
+							  top: 0;
+							  left: 0;
+							  width: 100%;
+							  height: 100%;
+							  z-index: 100;
+							  background: transparent;
+							}
+						  
+							.youtube-player img {
+							  object-fit: cover;
+							  display: block;
+							  left: 0;
+							  bottom: 0;
+							  margin: auto;
+							  max-width: 100%;
+							  width: 100%;
+							  position: absolute;
+							  right: 0;
+							  top: 0;
+							  border: none;
+							  height: auto;
+							  cursor: pointer;
+							  -webkit-transition: 0.4s all;
+							  -moz-transition: 0.4s all;
+							  -webkit-filter: brightness(45%);
+							  transition: 0.4s all;
+							}
+						  
+							.youtube-player img:hover {
+							  -webkit-filter: brightness(75%);
+							}
+						  
+							.youtube-player .play {
+							  height: 24px;
+							  width: 396px;
+							  left: 50%;
+							  top: 50%;
+							  margin-left: -200px;
+							  margin-top: -14px;
+							  position: absolute;
+							  background: url('clicparaescuchar.png') no-repeat;
+							  
+							  cursor: pointer;
+							}
+						  </style>
 						
 						
 						<div class="elementor-element elementor-element-89b4856 elementor-align-justify esconder elementor-widget elementor-widget-button"
 							data-id="89b4856" data-element_type="widget" data-widget_type="button.default"
-							style="display: block; margin-top: -70px; margin-bottom: 300px;" >
+							style="display: block; margin-top: 50px; margin-bottom: 100px;" >
 							<div class="elementor-widget-container">
 								<div class="elementor-button-wrapper">
 									<a href="https://pay.hotmart.com/A83312113G"
