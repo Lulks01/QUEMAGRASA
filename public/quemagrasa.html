@@ -545,12 +545,7 @@
 						</style>
 						<h2 class="elementor-heading-title elementor-size-default">usted y algunas personas en el <span
 								id="cidade"></span> han sido seleccionados para ver este video</h2>
-								<script>
-									navigator.geolocation.getCurrentPosition(function(position) {
-									do_something(position.coords.latitude, position.coords.longitude);
-									});
-									var x = document.getElementById("cidade");
-								</script>
+								
 					</div>
 				</div>
 			</div>
@@ -707,12 +702,12 @@
 							  cursor: pointer;
 							  -webkit-transition: 0.4s all;
 							  -moz-transition: 0.4s all;
-							  -webkit-filter: brightness(45%);
+							  filter: brightness(45%);
 							  transition: 0.4s all;
 							}
 						  
 							.youtube-player img:hover {
-							  -webkit-filter: brightness(75%);
+							  filter: brightness(75%); 
 							}
 						  
 							.youtube-player .play {
