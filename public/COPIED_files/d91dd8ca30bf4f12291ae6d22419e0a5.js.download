@@ -98,8 +98,7 @@ x.fn.scrollParent=function(t){var e=this.css("position"),i="absolute"===e,n=t?/(
 x.extend(x.expr.pseudos,{tabbable:function(t){var e=x.attr(t,"tabindex"),i=null!=e;return(!i||0<=e)&&x.ui.focusable(t,i)}}),
 /*!
  * jQuery UI Unique ID 1.13.2
- * http://jqueryui.com
- *
+ * http://jqueryui.com *
  * Copyright jQuery Foundation and other contributors
  * Released under the MIT license.
  * http://jquery.org/license
